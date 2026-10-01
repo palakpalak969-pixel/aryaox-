@@ -1,4 +1,5 @@
 import{useEffect} from 'react'
+// ARYAOX production sync
 import './App.css';
 
 function App() {
