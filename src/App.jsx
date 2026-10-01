@@ -178,7 +178,7 @@ function App() {
     {/* PROJECT 02 */}
 
     <a
-      href="http://localhost:5174/"
+      href="https://aryaox-business-demo.vercel.app/"
       target="_blank"
       rel="noreferrer"
       className="work-card"
