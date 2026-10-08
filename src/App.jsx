@@ -40,7 +40,7 @@ function App() {
 
       <section className="hero">
         <p className="eyebrow">
-          WEB DEVELOPMENT • DESIGN • DIGITAL
+          DIGITAL • DESIGN • DIGITAL
         </p>
 
         <h1>
@@ -49,8 +49,7 @@ function App() {
         </h1>
 
         <p className="hero-text">
-          ARYAOX creates modern, responsive websites for businesses,
-          startups and personal brands that want to look professional online.
+          ARYAOX builds digital experiences, products, and solutions that help businesses and ideas move forward.
         </p>
 
         <div className="hero-buttons">
@@ -59,7 +58,7 @@ function App() {
           </a>
 
           <a href="#work" className="secondary-btn">
-            View My Work →
+            View Our Work →
           </a>
         </div>
       </section>
