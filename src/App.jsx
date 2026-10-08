@@ -200,7 +200,7 @@ function App() {
          <p>
   A responsive business website designed to present services,
   build trust and help businesses generate enquiries online.
-</p> 
+         </p> 
 
           <div className="tech-stack">
             <span>React</span>
@@ -271,21 +271,22 @@ function App() {
     </div>
   </div>
 </section>
+
       {/* CONTACT */}
 
 <section className="contact" id="contact">
   <div className="contact-content">
 
-    <p className="eyebrow">LET'S WORK TOGETHER</p>
+    <p className="eyebrow">START A PROJECT</p>
 
     <h2>
-      Have a project
-      <span> in mind?</span>
-    </h2>
+  Have a digital project
+  <span> in mind?</span>
+</h2>
 
     <p className="contact-text">
-      Tell me what you're building, what you need, and where you want
-      to take it. Let's create something that works.
+      Tell us what you're building, what you need, and where you want
+to take it. Let's create something that works.
     </p>
 
     <a
@@ -344,7 +345,7 @@ function App() {
     </div>
 
     <div className="form-group">
-      <label htmlFor="service">What do you need?</label>
+      <label htmlFor="service">What digital service do you need?</label>
 
       <select id="service" name="service">
         <option value="">Select a service</option>
@@ -384,7 +385,7 @@ function App() {
   <div className="footer-top">
     <div>
       <div className="logo">ARYAOX</div>
-      <p>Websites that move businesses forward.</p>
+      <p>Digital experiences, products and solutions built to move ideas forward.</p>
     </div>
 
     <div className="footer-links">
