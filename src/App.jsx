@@ -125,16 +125,16 @@ function App() {
         </div>
       </section>
 
-      {/* SELECTED WORK */}
+      {/* OUR WORK */}
 
 <section className="work" id="work">
   <div className="section-heading">
-    <p className="eyebrow">SELECTED WORK</p>
+    <p className="eyebrow">OUR WORK</p>
 
-    <h2>
-      Projects built with
-      <span> purpose.</span>
-    </h2>
+   <h2>
+  Digital projects
+  <span> built with purpose.</span>
+</h2>
   </div>
 
   <div className="work-grid">
@@ -152,9 +152,11 @@ function App() {
 
           <h3>Developer Dashboard</h3>
 
-          <p>
-            A productivity dashboard designed to help developers
-            organize tasks, projects and daily work in one place.
+        
+            <p>
+  A modern developer dashboard built with React to organize
+  tasks, projects and daily work in one place.
+
           </p>
 
           <a
@@ -195,10 +197,10 @@ function App() {
 
           <h3>Business Website</h3>
 
-          <p>
-            A responsive business website focused on presenting
-            services, building trust and generating enquiries.
-          </p>
+         <p>
+  A responsive business website designed to present services,
+  build trust and help businesses generate enquiries online.
+</p> 
 
           <div className="tech-stack">
             <span>React</span>
