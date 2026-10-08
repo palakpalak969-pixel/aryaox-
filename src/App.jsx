@@ -67,11 +67,11 @@ function App() {
 
       <section className="services" id="services">
         <div className="section-heading">
-          <p className="eyebrow">WHAT I DO</p>
+          <p className="eyebrow">DIGITAL SERVICES</p>
 
           <h2>
             Digital solutions
-            <span> built around your business.</span>
+            <span> built to move your business forward.</span>
           </h2>
         </div>
 
@@ -82,8 +82,10 @@ function App() {
             <h3>Website Development</h3>
 
             <p>
-              Modern, responsive websites built from the ground up
-              for businesses and startups.
+              <p>
+  Modern, responsive websites built for businesses, startups 
+  and growing brands that want a strong online presence.
+               </p>
             </p>
           </div>
 
@@ -93,8 +95,9 @@ function App() {
             <h3>Website Redesign</h3>
 
             <p>
-              Transform outdated websites into clean, modern
-              experiences that represent your brand better.
+              Transform outdated websites into modern, high-performing 
+  digital experiences that represent your brand better.
+
             </p>
           </div>
 
@@ -103,10 +106,10 @@ function App() {
 
             <h3>Responsive Design</h3>
 
-            <p>
-              Websites that look and work properly across phones,
-              tablets and desktops.
-            </p>
+           <p>
+  Responsive websites designed to work smoothly across 
+  phones, tablets and desktop devices.
+          </p>
           </div>
 
           <div className="service-card">
@@ -114,10 +117,10 @@ function App() {
 
             <h3>Maintenance & Support</h3>
 
-            <p>
-              Ongoing updates, improvements and technical support
-              to keep your website running smoothly.
-            </p>
+           <p>
+  Ongoing website updates, improvements and technical support 
+  to keep your digital presence running smoothly.
+      </p>
           </div>
         </div>
       </section>
