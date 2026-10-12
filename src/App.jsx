@@ -1,8 +1,57 @@
-import{useEffect} from 'react'
+import { useEffect, useState } from 'react';
 // ARYAOX production sync
 import './App.css';
 
 function App() {
+  
+  const [formStatus, setFormStatus] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    const payload = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      business_name: formData.get("business"),
+      service: formData.get("service"),
+      message: formData.get("message"),
+    };
+
+    setFormStatus("");
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("/api/submit-enquiry", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(
+          result.error || "Your enquiry could not be submitted."
+        );
+      }
+
+      alert("Thank you for contacting ARYAOX! Your enquiry has been submitted successfully. We'll be in touch soon.");
+      form.reset();
+    } catch (error) {
+      setFormStatus(
+        error.message || "Something went wrong. Please try again."
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   useEffect(() => {
   const section = document.querySelector(".why-aryaox");
 
@@ -299,11 +348,10 @@ to take it. Let's create something that works.
   </div>
   <div className="project-form" id="project-form">
 
-  <form
-  action="https://formspree.io/f/mjykozrk"
-  method="POST"
-  
->
+ <form onSubmit={handleSubmit}>
+  <p role="status" aria-live="polite">
+    {formStatus}
+  </p>
 
     <div className="form-row">
 
@@ -369,9 +417,15 @@ to take it. Let's create something that works.
       ></textarea>
     </div>
 
-    <button type="submit" className="form-submit">
-      Send Inquiry →
-    </button>
+    
+<button
+  type="submit"
+  className="form-submit"
+  disabled={isSubmitting}
+>
+  {isSubmitting ? "Sending..." : "Send Inquiry →"}
+</button>
+
 
   </form>
 
