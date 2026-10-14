@@ -473,7 +473,7 @@ function App() {
                 className="form-submit"
                 disabled={isSubmitting}
               >
-                {isSubmitting ? "Sending..." : "Send Inquiry â†’"}
+                {isSubmitting ? "Sending..." : "Send Inquiry "}
               </button>
             </form>
           </div>
