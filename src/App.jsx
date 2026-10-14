@@ -106,7 +106,7 @@ function App() {
         >
           <div className="success-box">
             <div className="success-check" aria-hidden="true">
-              âœ“
+                ✓
             </div>
 
             <h2 id="success-title">Enquiry Received</h2>
@@ -142,7 +142,7 @@ function App() {
 
         {/* HERO */}
         <section className="hero">
-          <p className="eyebrow">DIGITAL â€¢ DESIGN â€¢ DIGITAL</p>
+          <p className="eyebrow">DIGITAL • DESIGN • DEVELOP</p>
 
           <h1>
             Websites built to
@@ -160,7 +160,7 @@ function App() {
             </a>
 
             <a href="#work" className="secondary-btn">
-              View Our Work â†’
+              View Our Work →’
             </a>
           </div>
         </section>
@@ -250,7 +250,7 @@ function App() {
                     rel="noreferrer"
                     className="project-link"
                   >
-                    View Project â†’
+                    View Project →’
                   </a>
 
                   <div className="tech-stack">
@@ -370,7 +370,7 @@ function App() {
             </p>
 
             <a href="#project-form" className="contact-btn">
-              Start a Conversation â†’
+              Start a Conversation →
             </a>
           </div>
 
@@ -536,7 +536,7 @@ function App() {
           </div>
 
           <div className="footer-bottom">
-            <span>Â© 2026 ARYAOX</span>
+            <span>© 2026 ARYAOX</span>
             <span>Built by ARYAOX</span>
           </div>
         </footer>
