@@ -160,7 +160,7 @@ function App() {
             </a>
 
             <a href="#work" className="secondary-btn">
-              View Our Work →’
+              View Our Work →
             </a>
           </div>
         </section>
@@ -250,7 +250,7 @@ function App() {
                     rel="noreferrer"
                     className="project-link"
                   >
-                    View Project →’
+                    View Project →
                   </a>
 
                   <div className="tech-stack">
