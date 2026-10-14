@@ -716,3 +716,135 @@ footer {
   }
 
 }
+
+/* Enquiry form status messages */
+.form-status {
+  margin: 0 0 20px;
+  padding: 14px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.form-status-success {
+  color: #166534;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+}
+
+.form-status-error {
+  color: #b91c1c;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+}
+
+/* ARYAOX full-screen enquiry confirmation */
+.success-overlay {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 999999 !important;
+  width: 100vw;
+  height: 100vh;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+  background: rgba(5, 7, 10, 0.97);
+  backdrop-filter: blur(12px);
+}
+
+.success-box {
+  width: 100%;
+  max-width: 420px;
+  padding: 44px 32px;
+  box-sizing: border-box;
+  text-align: center;
+  background: #111318;
+  border: 1px solid #292d35;
+  border-radius: 18px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+  animation: successAppear 0.35s ease-out;
+}
+
+.success-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 68px;
+  margin: 0 auto 24px;
+  border: 2px solid #22c55e;
+  border-radius: 50%;
+  color: #22c55e;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.success-box h2 {
+  margin: 0 0 12px;
+  color: #fff;
+  font-size: 26px;
+}
+
+.success-box p {
+  margin: 0;
+  color: #a5aab5;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.success-button {
+  margin-top: 28px;
+  padding: 13px 22px;
+  border: 0;
+  border-radius: 8px;
+  background: #22c55e;
+  color: #07110a;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@keyframes successAppear {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 480px) {
+  .success-box {
+    padding: 36px 24px;
+  }
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.footer-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.footer-links a:hover {
+  opacity: 0.7;
+  transform: translateY(-2px);
+}
+
+.footer-links svg {
+  display: block;
+  width: 22px;
+  height: 22px;
+}

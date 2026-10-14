@@ -20,29 +20,30 @@ export default async function handler(req, res) {
 
  return res.status(500).json({
   error: "Server configuration is incomplete.",
-  urlLoaded: Boolean(supabaseUrl),
-  secretLoaded: Boolean(supabaseKey),
 });
 }
 
-  const { name, email, business_name, service, message } =
+  const { name, phone, email, business_name, service, message } =
     req.body ?? {};
 
   if (
     typeof name !== "string" ||
+    typeof phone !== "string" ||
     typeof email !== "string" ||
     typeof message !== "string" ||
     !name.trim() ||
+    !phone.trim() ||
     !email.trim() ||
     !message.trim()
   ) {
     return res.status(400).json({
-      error: "Please provide your name, email, and project message.",
+      error: "Please provide your name, phone, email, and project message.",
     });
   }
 
   if (
     name.length > 120 ||
+    phone.length > 20 ||
     email.length > 254 ||
     message.length > 5000 ||
     (business_name != null &&
@@ -71,6 +72,7 @@ export default async function handler(req, res) {
       .from("enquiries")
       .insert({
         name: name.trim(),
+        phone: phone.trim(),
         email: email.trim(),
         business_name: business_name?.trim() || null,
         service: service?.trim() || null,
